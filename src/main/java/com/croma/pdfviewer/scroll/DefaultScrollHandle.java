@@ -13,8 +13,8 @@ import android.widget.TextView;
 import androidx.core.content.ContextCompat;
 
 import com.croma.pdfviewer.PDFView;
-import com.croma.pdfviewer.R;
 import com.croma.pdfviewer.util.Util;
+import com.github.pdfviewer.R;
 
 public class DefaultScrollHandle extends RelativeLayout implements ScrollHandle {
 

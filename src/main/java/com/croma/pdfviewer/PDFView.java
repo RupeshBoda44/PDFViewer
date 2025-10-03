@@ -1,18 +1,4 @@
-/**
- * Copyright 2016 Bartosz Schiller
- * <p/>
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * <p/>
- * http://www.apache.org/licenses/LICENSE-2.0
- * <p/>
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+
 package com.croma.pdfviewer;
 
 import android.content.Context;
@@ -73,24 +59,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * It supports animations, zoom, cache, and swipe.
- * <p>
- * To fully understand this class you must know its principles :
- * - The PDF document is seen as if we always want to draw all the pages.
- * - The thing is that we only draw the visible parts.
- * - All parts are the same size, this is because we can't interrupt a native page rendering,
- * so we need these renderings to be as fast as possible, and be able to interrupt them
- * as soon as we can.
- * - The parts are loaded when the current offset or the current zoom level changes
- * <p>
- * Important :
- * - DocumentPage = A page of the PDF document.
- * - UserPage = A page as defined by the user.
- * By default, they're the same. But the user can change the pages order
- * using {@link #load(DocumentSource, String, int[])}. In this
- * particular case, a userPage of 5 can refer to a documentPage of 17.
- */
 public class PDFView extends RelativeLayout {
 
     private static final String TAG = PDFView.class.getSimpleName();

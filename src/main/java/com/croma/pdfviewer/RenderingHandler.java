@@ -1,18 +1,4 @@
-/**
- * Copyright 2016 Bartosz Schiller
- * <p/>
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * <p/>
- * http://www.apache.org/licenses/LICENSE-2.0
- * <p/>
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+
 package com.croma.pdfviewer;
 
 import android.graphics.Bitmap;
@@ -27,11 +13,6 @@ import android.util.Log;
 import com.croma.pdfviewer.exception.PageRenderingException;
 import com.croma.pdfviewer.model.PagePart;
 
-/**
- * A {@link Handler} that will process incoming {@link RenderingTask} messages
- * and alert {@link PDFView#onBitmapRendered(PagePart)} when the portion of the
- * PDF is ready to render.
- */
 class RenderingHandler extends Handler {
     /**
      * {@link Message#what} kind of message this handler processes.
