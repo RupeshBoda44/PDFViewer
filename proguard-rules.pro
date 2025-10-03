@@ -17,5 +17,5 @@
 #}
 
 # Keep PDFHelper library classes
--keep class com.github.pdfhelper.** { *; }
--dontwarn com.github.pdfhelper.**
+-keep class com.croma.pdfhelper.** { *; }
+-dontwarn com.croma.pdfhelper.**
