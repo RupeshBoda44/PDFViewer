@@ -1,0 +1,28 @@
+
+plugins {
+    id 'com.android.library' version '8.11.2'
+}
+android {
+    compileSdkVersion 36
+
+    defaultConfig {
+        minSdkVersion 28
+        targetSdkVersion 36
+    }
+    namespace 'com.croma.pdfviewer'
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation 'com.google.android.material:material:1.13.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
+//    implementation project(':PdfiumAndroid')
+//    implementation 'com.github.RupeshBoda44:pdfhelper:1.0.0'
+    implementation 'com.github.RupeshBoda44:PDFHelper:d1269e2b60'
+}
