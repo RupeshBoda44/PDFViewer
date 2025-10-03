@@ -15,3 +15,7 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+
+# Keep PDFHelper library classes
+-keep class com.github.pdfhelper.** { *; }
+-dontwarn com.github.pdfhelper.**
