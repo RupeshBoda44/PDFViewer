@@ -49,6 +49,8 @@ afterEvaluate {
             maven(MavenPublication) {
                 from components.release
                 groupId = 'com.github.RupeshBoda44'
+
+
                 artifactId = 'pdfviewer'
                 version = '1.0.0'
             }
