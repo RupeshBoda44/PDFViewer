@@ -1,5 +1,5 @@
 plugins {
-    id 'com.android.library' version '8.11.2'
+    id 'com.android.library' version '8.13.0'
     id 'maven-publish'
 }
 android {
@@ -40,7 +40,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
 //    implementation project(':PdfiumAndroid')
 //    implementation 'com.github.RupeshBoda44:pdfhelper:1.0.0'
-    implementation 'com.github.RupeshBoda44:PDFHelper:d1269e2b60'
+    implementation 'com.github.RupeshBoda44:PDFHelper:9455598980'
 }
 
 afterEvaluate {
